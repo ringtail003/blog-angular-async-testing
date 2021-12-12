@@ -1,27 +1,29 @@
 # BlogAngularAsyncTesting
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+Angular Advent Calendar 2021のサンプルコードです。
 
-## Development server
+## ディレクトリ
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+サンプルのテストコードは `src/app/tests` に保存されています。
 
-## Code scaffolding
+## テストの実行
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+下記のコマンドでテストを実行できます。
 
-## Build
+```sh
+ng test
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+初回のテスト実行時は下記コマンドも合わせて実行してください。
 
-## Running unit tests
+```sh
+# v16.10以上で実行してください
+node -v
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# パッケージをインストールしてください
+npm ci
+```
 
-## Running end-to-end tests
+## その他
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+通らないテストの例は `xit` でスキップしています。
